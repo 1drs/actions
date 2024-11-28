@@ -8,14 +8,14 @@ jobs:
         run: echo "Welcome to echo Workflow"
       - name: Collecting environment
         run: |
-        cat /proc/self/cgroup
-        echo '---'
-        whoami
-        echo '---'
-        echo "$PATH"
-        echo '---'
-        pwd
-        echo '---'
-        printenv
+          cat /proc/self/cgroup
+          echo '---'
+          whoami
+          echo '---'
+          echo "$PATH"
+          echo '---'
+          pwd
+          echo '---'
+          printenv
       - name: End of Greeting
         run: echo "Thank you, enjoy!"
