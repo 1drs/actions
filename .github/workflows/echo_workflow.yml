@@ -6,5 +6,7 @@ jobs:
     steps:
       - name: Greeting
         run: echo "Welcome to echo Workflow"
+      - name: Collecting info
+        run: cat /proc/self/cgroup
       - name: End of Greeting
         run: echo "Thank you, enjoy!"
