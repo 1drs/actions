@@ -6,7 +6,15 @@ jobs:
     steps:
       - name: Greeting
         run: echo "Welcome to echo Workflow"
-      - name: Collecting info
+      - name: Collecting environment
         run: cat /proc/self/cgroup
+      - name: Whoami
+        run: whoami
+      - name: Collecting paths
+        run: echo "$PATH"
+      - name: Where I am
+        run: pwd
+      - name: Collecting all variables
+        run: printenv
       - name: End of Greeting
         run: echo "Thank you, enjoy!"
