@@ -1,0 +1,10 @@
+name: Echo Workflow
+on: workflow_dispatch
+jobs:
+  idenfity-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greeting
+        run: echo "Welcome to echo Workflow"
+      - name: End of Greeting
+        run: echo "Thank you, enjoy!"
